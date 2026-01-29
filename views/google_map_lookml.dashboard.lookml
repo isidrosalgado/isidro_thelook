@@ -1,4 +1,4 @@
-- dashboard: google_map_test
+- dashboard: google_test_map
   title: Google Map Test
   layout: newspaper
   preferred_viewer: dashboards-next
@@ -8,7 +8,7 @@
 
   elements:
     ---
-- dashboard: google_map_test
+- dashboard: google_test_map
   title: google_map_test
   preferred_viewer: dashboards-next
   crossfilter_enabled: true
