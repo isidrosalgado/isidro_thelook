@@ -1,22 +1,20 @@
 ---
-- dashboard: google_map
-  title: google map
+- dashboard: google_map_test
+  title: Google_map_test
   preferred_viewer: dashboards-next
   crossfilter_enabled: true
   description: ''
-  preferred_slug: EvpohorinZpLoDJTQFDnGQ
+  preferred_slug: qsjEv6EPsMqwMJMODqfxnV
   theme_name: ''
   layout: newspaper
   elements:
-  - title: google map
-    name: google map
-    model: viswa_training
-    explore: countries
+  - title: Google_map_test
+    name: Google_map_test
+    model: isidro_the_look
+    explore: users
     type: looker_google_map
-    fields: [countries.country, countries.count]
-    filters:
-      countries.country: USA
-    sorts: [countries.count desc 0]
+    fields: [users.country, users.zip, users.count]
+    sorts: [users.count desc 0]
     limit: 500
     column_limit: 50
     query_timezone: America/Los_Angeles
@@ -25,23 +23,8 @@
     series_labels: {}
     show_view_names: true
     defaults_version: 0
-    listen:
-      Country: countries.country
+    listen: {}
     row: 0
     col: 0
     width: 24
     height: 12
-  filters:
-  - name: Country
-    title: Country
-    type: field_filter
-    default_value: USA
-    allow_multiple_values: true
-    required: false
-    ui_config:
-      type: advanced
-      display: popover
-    model: viswa_training
-    explore: countries
-    listens_to_filters: []
-    field: countries.country
